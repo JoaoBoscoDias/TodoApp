@@ -1,11 +1,12 @@
 import { View } from "react-native";
-import { Text } from "react-native-paper";
-
+import { Paragraph, Text } from "react-native-paper";
+import styles from "../utils/styles";
 
 export default function Home() {
-    return (
-        <View>
-            <Text>Home Screen</Text>
-        </View>
-    )
-}
+  return (
+    <View style={styles.container_home}>
+      <Paragraph style={styles.title_home}>Home Screen</Paragraph>
+      <Text style={styles.subtitle_home}>Todas as suas tasks vão aparecer aqui</Text>
+    </View>
+  );
+};
